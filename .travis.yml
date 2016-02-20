@@ -1,7 +1,6 @@
+---
 language: java
 jdk:
-  - oraclejdk7
-install: "mvn install -f ./cloudify/pom.xml --quiet -DskipTests=true"
-script: "mvn test -f ./cloudify/pom.xml"
-notifications:
-  irc: "irc.freenode.org#cloudify"
+- oraclejdk7
+install: mvn install -f ./cloudify/pom.xml --quiet -DskipTests=true
+script: mvn test -f ./cloudify/pom.xml
